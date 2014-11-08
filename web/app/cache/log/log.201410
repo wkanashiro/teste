@@ -1,0 +1,15 @@
+31-10-2014 20:09:36 [127.0.0.1]
+[target=login] proccessed in 3.0911 seconds.
+
+31-10-2014 20:10:08 [127.0.0.1]
+[target=body&] proccessed in 22.4633 seconds.
+
+31-10-2014 20:10:24 [127.0.0.1]
+[target=body&toSection=access] proccessed in 0.4700 seconds.
+
+31-10-2014 20:10:28 [127.0.0.1]
+[target=body&toSection=access&toAction=permissionGroup&itemId=1] proccessed in 0.4067 seconds.
+
+31-10-2014 20:10:38 [127.0.0.1]
+[target=body&toSection=access&toAction=permissionGroup&itemId=1] proccessed in 0.5989 seconds.
+

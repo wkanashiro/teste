@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<view table="siscad.nota" primary="id" paginate="15">
+<icon action="view" image="view.gif" label="Visualizar" default="true" />
+<icon action="edit" image="edit.gif" label="Editar" />
+<icon action="delete" image="delete.gif" label="Apagar" />
+</view>
+<search table="siscad.nota">
+
+</search>

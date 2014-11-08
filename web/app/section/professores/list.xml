@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<view table="siscad.professor" primary="id" paginate="15">
+<field type="String" column="nome" label="Nome" />
+<field type="Date" column="datanascimento" label="Data de Nascimento" />
+
+
+<icon action="view" image="view.gif" label="Visualizar Professor" default="true" />
+<icon action="edit" image="edit.gif" label="Editar Professor" />
+<icon action="delete" image="delete.gif" label="Apagar Professor" />
+</view>
+<search table="siscad.professor">
+<field type="String" column="nome" label="Nome" />
+<field type="Date" column="datanascimento" label="Data de Nascimento" />
+</search>

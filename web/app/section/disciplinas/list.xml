@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<view table="siscad.disciplina" primary="id" paginate="15">
+<field type="String" column="nome" label="Nome" />
+<field type="String" column="codigo" label="Código" />
+<field type="String" column="tipo" label="Tipo" />
+
+
+<icon action="view" image="view.gif" label="Visualizar disciplina" default="true" />
+<icon action="edit" image="edit.gif" label="Editar disciplina" />
+<icon action="delete" image="delete.gif" label="Apagar disciplina" />
+</view>
+<search table="siscad.disciplina">
+	<field type="String" column="nome" label="Nome" />
+	<field type="Date" column="datanascimento" label="Data de Nascimento" />
+</search>

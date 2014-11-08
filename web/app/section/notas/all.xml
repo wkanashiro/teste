@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form table="siscad.nota" primary="id">
+	<go-to flag="success" action="[default]"  />
+	<go-to flag="fail" action="[same]" />
+</form>
+
+
+
+
+
+
+
+
+	
+	

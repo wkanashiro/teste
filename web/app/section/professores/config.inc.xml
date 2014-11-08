@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<action-mapping>
+	<action
+		name="list"
+		label="List Authors | pt_BR: Listar Professors"
+		default="true"
+		description="">
+		<menu action="create" />
+		<menu function="search" />
+	</action>
+	<action
+		name="view"
+		label="View Author | pt_BR: Visualizar Professor"
+		description="">
+		<menu action="list" />
+		<menu action="edit" />
+		<menu function="print" />
+	</action>
+	<action
+		name="create"
+		label="Create New Author | pt_BR: Criar Novo Professor"
+		description="">
+		<menu function="save" />
+		<menu action="list" image="close.png" />
+	</action>
+	<action
+		name="edit"
+		label="Edit Author | pt_BR: Editar Professor"
+		description="">
+		<menu function="save" />
+		<menu action="list" image="close.png" />
+	</action>
+	<action
+		name="delete"
+		label="Delete Author | pt_BR: Apagar Professor"
+		description="">
+		<menu function="delete" />
+		<menu action="list" image="close.png" />
+	</action>
+</action-mapping>

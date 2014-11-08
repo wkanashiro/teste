@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<view table="siscad.turma" primary="id" paginate="15">
+	<field type="String" column="codigo" label="Nome" />
+	<field type="Integer" column="ano" label="Ano" />
+	
+	<icon section="notas" action="create" image="form.gif" label="Lançar/Visualizar Notas" />
+	<icon section="faltas" action="list" image="confirm.gif" label="Lançar/Visualizar Faltas" />
+	
+	<icon action="view" image="view.gif" label="Visualizar turma" default="true" />
+	<icon action="edit" image="edit.gif" label="Editar turma" />
+	<icon action="delete" image="delete.gif" label="Apagar turma" />
+</view>
+<search table="siscad.turma">
+	<field type="String" column="codigo" label="Nome" />
+	<field type="Integer" column="ano" label="Ano" />
+</search>

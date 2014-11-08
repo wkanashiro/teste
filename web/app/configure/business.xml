@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section-mapping>
+	<section 
+		label="Home | pt_BR: Página Inicial"
+		name="home"
+		component="global.home"
+		default="true"
+	/>
+	
+	<section 
+		label="Base of Files | pt_BR: Banco de Arquivos"
+		name="archive"
+		component="global.archive"
+	/>
+	
+	<section 
+		label="Access Control | pt_BR: Controle de Acesso"
+		name="access"
+		component="global.group"
+		admin="true"
+	/>
+	
+	<section 
+		label="Managers Users | pt_BR: Usuários Gestores"
+		name="manager"
+		component="global.userPrivate"
+		father="access"
+	/>
+	<section
+		label="Siscad | pt_BR: Siscad"
+		name="siscad"
+	/>
+	<section
+		label="Cadastrar Professor | pt_BR: Professores"
+		name="professores"
+		component="global.generic"
+		father="siscad"
+	/>
+	<section
+		label="Cadastrar Alunos | pt_BR: Alunos"
+		name="alunos"
+		component="global.generic"
+		father="siscad"
+	/>
+	<section
+		label="Cadastrar Disciplinas | pt_BR:Disciplinas"
+		name="disciplinas"
+		component="global.generic"
+		father="siscad"
+	/>
+
+	<section
+		label="Cadastrar Curso | pt_BR:Cursos"
+		name="cursos"
+		component="global.generic"
+		father="siscad"
+	/>
+	<section
+		label="Cadastrar Turma | pt_BR:Turmas(Disciplinas) "
+		name="turmas"
+		component="global.generic"
+		father="siscad"
+	/>
+	<section
+		label="Matricular Aluno | pt_BR: Matricula Aluno"
+		name="matriculas"
+		component="global.generic"
+		father="siscad"
+	/>
+	<section
+		label="Lançar Notas | pt_BR:Notas"
+		name="notas"
+		component="local/component/siscad.notas/"
+		father="siscad"
+	/>
+	<section
+		label="Lançar Faltas | pt_BR:Faltas"
+		name="faltas"
+		component="local/component/siscad.faltas/"
+		father="siscad"
+	/>
+
+	
+</section-mapping>

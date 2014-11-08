@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<view table="siscad.curso" primary="id" paginate="15">
+
+<field type="String" column="nome" label="Nome" />
+<field type="String" column="sigla" label="Sigla" />
+
+
+<icon action="view" image="view.gif" label="Visualizar curso" default="true" />
+<icon action="edit" image="edit.gif" label="Editar curso" />
+<icon action="delete" image="delete.gif" label="Apagar curso" />
+</view>
+<search table="siscad.curso">
+<field type="String" column="nome" label="Nome" />
+<field type="String" column="sigla" label="Sigla" />
+</search>

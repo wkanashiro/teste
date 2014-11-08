@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<action-mapping>
+	<action
+		name="list"
+		label="List Matriculas | pt_BR: Listar Matriculas"
+		default="true"
+		description="">
+		<menu action="create" />
+		<menu function="search" />
+	</action>
+	<action
+		name="view"
+		label="View Matricula | pt_BR: Visualizar Matricula"
+		description="">
+		<menu action="list" />
+		<menu action="edit" />
+		<menu function="print" />
+	</action>
+	<action
+		name="create"
+		label="Create New Matricula | pt_BR: Criar Nova Matricula"
+		description="">
+		<menu function="save" />
+		<menu action="list" image="close.png" />
+	</action>
+	<action
+		name="edit"
+		label="Edit Matricula | pt_BR: Editar Matricula"
+		description="">
+		<menu function="save" />
+		<menu action="list" image="close.png" />
+	</action>
+	<action
+		name="delete"
+		label="Delete Matricula | pt_BR: Apagar Matricula"
+		description="">
+		<menu function="delete" />
+		<menu action="list" image="close.png" />
+	</action>
+</action-mapping>

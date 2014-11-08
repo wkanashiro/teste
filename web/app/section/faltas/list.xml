@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<view table="siscad.matricula" primary="id" paginate="15">
+	
+<icon action="view" image="view.gif" label="Visualizar falta" default="true" />
+<icon action="edit" image="edit.gif" label="Editar falta" />
+<icon action="delete" image="delete.gif" label="Apagar falta" />
+</view>
+<search table="siscad.matricula">
+
+</search>

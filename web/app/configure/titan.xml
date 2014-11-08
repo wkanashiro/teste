@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<titan-configuration
+	name="Siscad - Sistema Academico"
+	description="Sistema Acadêmico Web"
+	url="http://localhost:8080/siscad/app"
+	e-mail="robsonok@gmail.com"
+	login-url="http://localhost:8080/siscad/app/titan.php?target=login"
+	core-path="../../titan/core/"
+	cache-path="cache/"
+	doc-path="doc/"
+	debug-mode="true"
+	session="_PUT_A_RANDOM_HASH_HERE_"
+	language="pt_BR"
+	use-chat="false"
+	all-sections="true">
+	
+	<database
+		sgbd="PostgreSQL"
+		host="localhost"
+		name="postgres"
+		user="postgres"
+		port="5432"
+		password="postgres"
+		schema="titan"
+	/>
+	
+	<security 
+		xml-path="configure/security.xml"
+		hash="_PUT_A_RANDOM_HASH_HERE_"
+		timeout="1800"
+	/>
+	
+	<search
+		hash="_PUT_A_RANDOM_HASH_HERE_"
+		timeout="15552000"
+	/>
+	
+	<archive 
+		xml-path="configure/archive.xml"
+		data-path="file/"
+	/>
+	
+	<business-layer 
+		xml-path="configure/business.xml" 
+	/>
+	
+	<skin
+		logo="teste.png"
+	/>
+	
+	<mail
+		xml-path="configure/mail.xml"
+	/>
+	
+	<version-control
+		schema="version"
+	/>
+
+	<log
+		db-path="cache/log.db"
+		xml-path="configure/log.xml"
+	/>
+	
+	
+	<lucene
+		index-path="cache/lucene"
+	/>
+	
+	<schedule
+		hash="asdfsadfasdfsdfsadfsadf"
+	/>
+	
+	<alert
+		xml-path="configure/alert.xml"
+	/>
+	
+	<friendly-url
+		change-password="password"
+		disable-alerts="alert"
+		rss="rss"
+	/>
+	
+	<backup
+		path="backup/"
+		validity="86400"
+		timeout="86400"
+	/>
+</titan-configuration>

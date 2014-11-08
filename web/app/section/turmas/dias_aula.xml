@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<view table="siscad.dias_letivos" primary="id">
+		<field type="Date" column="data" label="Data da aula" />
+		<field type="Integer" column="quantidade_aulas" label="Número de aulas"/>
+	</view>
+	<form table="siscad.dias_letivos" primary="id">
+		<field type="Date" column="data" label="Data da aula" required="true" />
+		<field type="Integer" column="quantidade_aulas" label="Número de aulas" required="true" />
+	</form>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form table="siscad.matricula" primary="id">
+	<go-to flag="success" action="[default]"  />
+	<go-to flag="fail" action="[same]"  />
+	<group label="Dados da Matricula">
+		
+		<field type="Date" column="data_matricula" label="Birthdate | pt_BR: Data Matricula"
+		first-year="1900" last-year="[now]" required="true" />
+
+		<field type="Enum" column="semestre" label="Semestre | pt_BR: Semestre" required="true">
+			<item value="1Semestre" label="1º Semestre  | pt_BR: 1º Semestre " />
+			<item value="2Semestre" label="2º Semestre  | pt_BR: 2º Semestre" />
+		</field>
+		
+		<field type="Integer" column="ano" label="Name | pt_BR: Ano" required="true" />
+
+		<field type="Select" column="id_turma" label="Type | pt_BR: Turma" required="true" link-table="siscad.turma" link-column="id" link-view="codigo" />
+
+		<field type="Select" column="id_aluno" label="Type | pt_BR: Aluno" required="true" link-table="siscad.aluno" link-column="id" link-view="nome" />
+	</group>
+</form>
+
+
+
+
+
+
+
+
+	
+	

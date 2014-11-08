@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<view table="siscad.matricula" primary="id" paginate="15">
+
+	<field type="Select" column="id_aluno" label="Type | pt_BR: Aluno" required="true" link-table="siscad.aluno" link-column="id" link-view="nome" />
+	<field type="Select" column="id_turma" label="Type | pt_BR: Turma" required="true" link-table="siscad.turma" link-column="id" link-view="codigo" />
+
+	<field type="Date" column="data_matricula" label="Data" />
+	<field type="Integer" column="ano" label="Ano" />
+
+	<icon action="view" image="view.gif" label="Visualizar Matricula" default="true" />
+	<icon action="edit" image="edit.gif" label="Editar Matricula" />
+	<icon action="delete" image="delete.gif" label="Apagar Matricula" />
+</view>
+<search table="siscad.matricula">
+	<field type="Select" column="id_aluno" label="Type | pt_BR: Aluno" required="true" link-table="siscad.aluno" link-column="id" link-view="nome" />
+	<field type="Select" column="id_turma" label="Type | pt_BR: Turma" required="true" link-table="siscad.turma" link-column="id" link-view="codigo" />
+	<field type="Date" column="data_matricula" label="Data" />
+	<field type="Integer" column="ano" label="Ano" />
+
+</search>

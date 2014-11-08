@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<view table="siscad.aluno" primary="id" paginate="15">
+<field type="String" column="nome" label="Nome" />
+<field type="Date" column="datanascimento" label="Data de Nascimento" />
+
+
+<icon action="view" image="view.gif" label="Visualizar aluno" default="true" />
+<icon action="edit" image="edit.gif" label="Editar aluno" />
+<icon action="delete" image="delete.gif" label="Apagar aluno" />
+</view>
+<search table="siscad.aluno">
+<field type="String" column="nome" label="Nome" />
+<field type="Date" column="datanascimento" label="Data de Nascimento" />
+<field type="String" column="cursoid" label="Curso" />
+</search>

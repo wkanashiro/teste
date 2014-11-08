@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form table="siscad.aluno" primary="id">
+	<go-to flag="success" action="[default]"  />
+	<go-to flag="fail" action="[same]"  />
+	<group label="Dados do Acadêmico">
+		<field type="String" column="nome" label="Name | pt_BR: Nome" max-length="128" required="true" />
+		<field type="Date" column="datanascimento" label="Birthdate | pt_BR: Data de Nascimento"
+		first-year="1900" last-year="[now]" required="true" />
+		<field type="String" column="nomepai" label="Name | pt_BR: Nome Pai" max-length="128" required="true" />
+		<field type="String" column="nomemae" label="Name | pt_BR: Nome Mãe" max-length="128" required="true" />
+		<field type="String" column="endereco" label="Adress | pt_BR: Endereço" max-length="128" required="true" />
+		<field type="Enum" column="sexo" label="Sexo | pt_BR: Sexo">
+			<item value="Feminino" label="Feminino  | pt_BR: Feminino" required="true" />
+			<item value="Masculino" label="Masculino | pt_BR: Masculino" required="true" />
+		</field>
+		<field type="Cpf" column="cpf" label="CPF | pt_BR: CPF"  required="true" />
+		<field type="Email" column="email" label="Email | pt_BR: Email"  required="true" />		
+
+		<field type="Select" column="idcurso" label="Type | pt_BR: Selecione Curso" required="true" link-table="siscad.curso" link-column="id" link-view="nome" help="Select the type of sector. | pt_BR: Selecione o tipo do setor."/>
+	</group>
+</form>
+
+
+
+
+
+
+
+
+	
+	

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form table="siscad.curso" primary="id">
+	<go-to flag="success" action="[default]"  />
+	<go-to flag="fail" action="[same]" />
+	<group label="Dados do curso">
+		
+		<field type="String" column="nome" label="Name | pt_BR: Nome" max-length="100" required="true" />
+
+		<field type="String" column="sigla" label="Name | pt_BR: Sigla" max-length="18" required="true" />
+
+		<field type="PlainText" column="descricao" label="Name | pt_BR: Descrição" max-length="256" required="true" />
+
+		<field type="String" column="coordenador" label="Name | pt_BR: Nome Coordenador" max-length="100" required="true" />
+
+		<field type="Email" column="email_coordenador" label="Name | pt_BR: Email Coordenador" required="true" />
+
+		<field type="Integer" column="duracao_min" label="Name | pt_BR: Duração Minima(anos)" required="true" />
+
+		<field type="Integer" column="duracao_max" label="Name | pt_BR: Duração Máxima(anos)" required="true" />
+
+		<field type="Integer" column="carga_horaria_obrigatoria" label="Name | pt_BR: Carga Horária Obrigatória(horas)" required="true" />
+
+		<field type="Integer" column="carga_horaria_optativa" label="Name | pt_BR: Carga Horária Optativa(horas)" required="true" />
+
+		<field type="Date" column="data_criacao_curso" label="Birthdate | pt_BR: Data criação do curso"
+		first-year="1900" last-year="[now]" required="true" />
+				
+	</group>
+</form>
+
+
+
+
+
+
+
+
+	
+	

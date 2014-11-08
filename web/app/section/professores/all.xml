@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<form table="siscad.professor" primary="id">
+
+	<go-to flag="success" action="[default]" />
+	<go-to flag="fail" action="[same]" />
+	<group label="Dados do Professor">
+		
+		<field type="String" column="nome" label="Name | pt_BR: Nome" max-length="128" />
+		
+		<field type="Date" column="datanascimento" label="Birthdate | pt_BR: Data de Nascimento"
+		first-year="1900" last-year="[now]" />
+		
+		<field type="String" column="escolaridade" label="Escolaridade | pt_BR: Escolaridade" max-length="100" />
+		
+		<field type="String" column="endereco" label="Adress | pt_BR: Endereço" max-length="100" />
+		
+		<field type="Enum" column="sexo" label="Sexo | pt_BR: Sexo">
+			<item value="Feminino" label="Feminino  | pt_BR: Feminino" />
+			<item value="Masculino" label="Masculino | pt_BR: Masculino" />
+		</field>
+
+		<field type="Cpf" column="cpf" label="CPF | pt_BR: CPF"  />
+		
+		<field type="Email" column="email" label="Email | pt_BR: Email"  />
+
+	</group>
+</form>
+
+
+
+
+
+
+
+
+	
+	

@@ -1,0 +1,6 @@
+
+# Protect access to Log Database
+<Files .\log.db>
+Order Allow,Deny
+Deny from all
+</Files>
